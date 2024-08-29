@@ -22,6 +22,6 @@ jobs:
 
     - name: Build image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest -t ${{ secrets.DOCKER_USERNAME }}/Dockerfile:${{ github.sha }} .
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest -t ${{ secrets.DOCKER_USERNAME }}/lab3:${{ github.sha }} .
         
 
